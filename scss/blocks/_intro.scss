@@ -1,0 +1,150 @@
+.main {
+  padding: 0px 15px;
+
+  @include tablet-768 () {
+    padding-inline: 39px;
+  }
+
+  @include tablet-576 () {
+    padding-inline: 33px;
+  }
+
+  @include mobile-320 () {
+    padding-inline: 15px;
+  }
+}
+
+.main__intro {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  margin-bottom: 70px;
+}
+
+.intro__img-block {
+
+  @include tablet-550 () {
+    display: none;
+  }
+
+  @include mobile-320 () {
+    display: none;
+  }
+}
+
+.intro__title {
+  font-size: 60px;
+  line-height: 66px;
+  color: var(--intro-color-title);
+  margin-bottom: 20px;
+  text-wrap: balance;
+
+  & span {
+    color: var(--intro-color-link);
+  }
+
+  @include tablet-853 () {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include tablet-768 () {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include tablet-717 () {
+    font-size: 38px;
+    line-height: 38px;
+  }
+
+
+  @include tablet-671 () {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+
+  @include tablet-576 () {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 10px;
+  }
+
+  @include mobile-320 () {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+.intro__subtitle {
+  font-size: 18px;
+  line-height: 27px;
+  color: var(--intro-color-subtitle);
+  margin-bottom: 60px;
+
+  @include tablet-768 () {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 40px;
+  }
+
+  @include tablet-717 () {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @include tablet-671 () {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 11px;
+  }
+
+  @include tablet-576 () {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 11px;
+  }
+
+  @include mobile-320 () {
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 40px;
+  }
+
+}
+
+.intro__link-product {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 23.48px;
+  color: var(--intro-color-link);
+  border: 1px solid var(--intro-color-link);
+  padding: 21px 60px;
+  transition: .2s all linear;
+
+  &:hover {
+    background-color: var(--hover-btn);
+    color: var(--btn-tabs-color);
+  }
+
+  @include tablet-671 () {
+    font-size: 18px;
+    line-height: 21.13px;
+    padding: 14.5px 41px;
+  }
+
+  @include tablet-576 () {
+    font-size: 18px;
+    line-height: 21.13px;
+    padding: 14.5px 41px;
+  }
+
+  @include mobile-320 () {
+    padding: 14.5px 29px;
+  }
+}
+

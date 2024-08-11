@@ -1,0 +1,231 @@
+.main__product-cards {
+  margin-bottom: 70px;
+}
+
+.product__title-tab {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  @include tablet-853 () {
+    display: block;
+  }
+
+  @include tablet-576 () {
+    display: block;
+  }
+}
+
+.product__title {
+  font-size: 40px;
+  line-height: 44px;
+  color: var(--cards-text);
+
+  @include tablet-853 () {
+    font-size: 40px;
+    line-height: 44px;
+    margin-bottom: 20px;
+  }
+
+  @include tablet-768 () {
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 20px;
+  }
+
+  @include tablet-576 {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+
+  @include mobile-320 () {
+    font-size: 24px;
+    line-height: 26.4px;
+  }
+}
+
+.product__cards-tabs {
+
+  @include tablet-511 () {
+    overflow: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  @include tablet-550 () {
+    display: flex;
+  }
+
+  @include mobile-320 () {
+    display: flex;
+  }
+}
+
+.tabs__btn {
+  background-color: var(--cards-bg-tabs);
+  margin-right: 32px;
+  color: var(--cards-text);
+  padding: 10px 20px;
+  border-radius: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  font-size: 20px;
+  line-height: 23.48px;
+  transition: .2s all linear;
+
+  &:hover {
+    background-color: #376B44;
+    color: white;
+  }
+}
+
+.products-cards__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+
+
+
+  @include tablet-963 () {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @include tablet-768 () {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  @include tablet-576 () {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+
+  @include mobile-320 () {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+}
+
+.products-card-france,
+.products-card-germany,
+.products-card-england {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  justify-items: center;
+  overflow: auto;
+
+  .img__block {
+    overflow: hidden;
+  }
+
+  & img {
+    margin-bottom: 20px;
+    width: 100%;
+    transition: 1s;
+    display: block;
+
+    &:hover {
+      transform: scale(1.2);
+
+    }
+  }
+
+  background-color: var(--card-bg);
+  padding: 20px 20px 30px 20px;
+
+  @include tablet-576 () {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items: center;
+    overflow: auto;
+  }
+}
+
+.card-author {
+  font-size: 18px;
+  line-height: 21.13px;
+  color: var(--card-author);
+  margin-bottom: 10px;
+
+  @include tablet-576 () {
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+}
+
+.card-name {
+  font-size: 30px;
+  line-height: 35.22px;
+  margin-bottom: 8px;
+
+  @include tablet-576 () {
+    font-size: 24px;
+    line-height: 28.18px;
+    text-wrap: nowrap;
+  }
+}
+
+.card-info {
+  font-size: 18px;
+  line-height: 21.13px;
+  margin-bottom: 30px;
+
+  @include tablet-576 () {
+    font-size: 16px;
+    line-height: 18.78px;
+  }
+}
+
+.card-price {
+  font-size: 24px;
+  line-height: 28.18px;
+  margin-bottom: 20px;
+  color: var(--card-price);
+
+  @include tablet-576 () {
+    font-size: 20px;
+    line-height: 23.48px;
+  }
+}
+
+.card-button {
+  font-size: 20px;
+  line-height: 23.48px;
+  padding: 20px 0;
+  width: 100%;
+  background: none;
+  border: 1px solid var(--card-button);
+  color: var(--card-button);
+
+  @include tablet-576 () {
+    display: flex;
+    font-size: 18px;
+    line-height: 21.13px;
+    justify-content: center;
+  }
+
+  transition: .2s all linear;
+
+  &:hover {
+    background-color: #376B44;
+    color: white;
+  }
+
+}
+
+.off {
+  display: none;
+}
+
+.bg-button-active-cards {
+  background-color: var(--btn-tabs-bg);
+  color: var(--btn-tabs-color);
+}
